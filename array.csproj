@@ -49,6 +49,7 @@
     <Compile Include="AbstructClassProgram.cs" />
     <Compile Include="AssessmentTest.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Logic.cs" />
     <Compile Include="LogicalProgram.cs" />
     <Compile Include="Priamid.cs" />
     <Compile Include="Program.cs" />
