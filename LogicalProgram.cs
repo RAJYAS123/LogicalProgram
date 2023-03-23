@@ -273,7 +273,7 @@ namespace array
                 res= res*10 + re;
                 numer = numer/10;
             }
-            numer = temp;
+            numer = tempp;
             if(numer == res)
             {
                 Console.WriteLine("palimdrone number");
