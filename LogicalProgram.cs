@@ -240,7 +240,48 @@ namespace array
             {
                 sum = sum + arr[i];
             }
-            Console.WriteLine("sum of array"+sum);
+            Console.WriteLine("sum of array:"+sum);
+
+            Console.WriteLine("-----------------palindrome program2--------------");
+            int numberrr = 121;
+            int remainr;
+            int rest = 0;
+            while(numberrr != 0)
+            {
+                remainr = rest % 10;
+                rest= rest*10+remainr;
+                numberrr = numberrr/10;
+            }
+            if (rest==numberrr)
+            {
+                Console.WriteLine("palindrome");
+            }
+            else
+            {
+                Console.WriteLine("not palimdrone");
+            }
+            Console.WriteLine();
+
+
+            int numer = Convert.ToInt32(Console.ReadLine());
+            int re;
+            int res= 0;
+            int tempp = numer;
+            while(numer != 0)
+            {
+                re = numer % 10;
+                res= res*10 + re;
+                numer = numer/10;
+            }
+            numer = temp;
+            if(numer == res)
+            {
+                Console.WriteLine("palimdrone number");
+            }
+            else
+            {
+                Console.WriteLine("not palimdrone");
+            }
             Console.ReadLine();
         }
     }
