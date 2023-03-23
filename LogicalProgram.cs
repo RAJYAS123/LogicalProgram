@@ -322,6 +322,24 @@ namespace array
             {
                 Console.WriteLine("it is not a prime number");
             }
+
+            Console.WriteLine("------------1 to 100 prime number---------");
+            for (int numbe = 1; numbe <=100; numbe++)
+            {
+                int counterr = 0;
+                for (int i = 1; i <= numbe; i++)
+                {
+                    if (numbe % i == 0)
+                    {
+                        counterr++;
+                    }
+                }
+                if (counterr == 2)
+                {
+                    Console.WriteLine(numbe);
+                }
+                
+            }
             Console.ReadLine();
         }
     }
