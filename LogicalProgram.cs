@@ -262,7 +262,7 @@ namespace array
             }
             Console.WriteLine();
 
-
+            Console.WriteLine("-----------------palindrome program User Input--------------");
             int numer = Convert.ToInt32(Console.ReadLine());
             int re;
             int res= 0;
@@ -281,6 +281,46 @@ namespace array
             else
             {
                 Console.WriteLine("not palimdrone");
+            }
+
+
+
+            Console.WriteLine("-----------------prime number--------------");
+            int prime = 7;
+            int countt = 0;
+            for (int i = 1; i <=prime ; i++)
+            {
+                if(prime%i ==0)
+                {
+                    countt++;
+                }
+            }
+            if(countt == 2)
+            {
+                Console.WriteLine("prime number");
+            }
+            else
+            {
+                Console.WriteLine("not prime number");
+            }
+
+            Console.WriteLine("prime number program by user input");
+            int prim = Convert.ToInt32((Console.ReadLine()));
+            int counter = 0;
+            for (int i = 1; i <=prim; i++)
+            {
+                if(prim%i ==0)
+                {
+                    counter++;
+                }
+            }
+            if(counter == 2)
+            {
+                Console.WriteLine("it is prime number");
+            }
+            else
+            {
+                Console.WriteLine("it is not a prime number");
             }
             Console.ReadLine();
         }
