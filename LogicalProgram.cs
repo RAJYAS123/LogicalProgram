@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -339,6 +340,36 @@ namespace array
                     Console.WriteLine(numbe);
                 }
                 
+            }
+
+
+            int take = Convert.ToInt32(Console.ReadLine());
+            int remaint;
+            int resulttt = 0;
+            while (take != 0)
+            {
+                remaint = take % 10;
+                resulttt = resulttt * 10 + remaint;
+                take = take / 10;
+            }
+            Console.WriteLine(resulttt);
+
+            ArrayList arrayList= new ArrayList();
+            arrayList.Add("raj");
+            arrayList.Add(1);
+            arrayList.Add(true);
+            foreach (var item in arrayList)
+            {
+                Console.WriteLine(item);
+            }
+
+            List<int> list = new List<int>();
+            list.Add(1);
+            list.Add(2);
+            list.Add(3);
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
             }
             Console.ReadLine();
         }

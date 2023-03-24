@@ -171,7 +171,17 @@ namespace array
 
 
 
-            Console.WriteLine(per.b);
+            //Console.WriteLine(per.b);
+            int take = 12345;
+            int remain;
+            int result = 0;
+            while (take != 0)
+            {
+                remain = take % 10;
+                result = result * 10 + remain;
+                remain = remain / 10;
+            }
+            Console.WriteLine(result);
             Console.ReadLine();
         }
 
